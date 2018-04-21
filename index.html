@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+    <title>华创后台模拟</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/project.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--头部导航-->
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #E2E5EA;">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="text.html" class="navbar-brand">
+                    <img src="img/shixun_logo.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" >
+                <ul class="nav navbar-nav nav_ul">
+                    <li class="active"><a href="#set">
+                        <img src="img/setManage.jpg" alt=""/>
+                        <h6>系统设置</h6></a>
+                    </li>
+                    <li><a href="#message">
+                        <img src="img/messageManage.jpg" alt=""/>
+                        <h6>信息管理</h6></a>
+                    </li>
+                    <li><a href="#classify">
+                        <img src="img/classify.jpg" alt=""/>
+                        <h6>栏目分类</h6></a>
+                    </li>
+                    <li><a href="#compile">
+                        <img src="img/compile.jpg" alt=""/>
+                        <h6>模板编辑</h6></a>
+                    </li>
+                    <li><a href="#usermanage">
+                        <img src="img/usermanage.jpg" alt=""/>
+                        <h6>用户管理</h6></a>
+                    </li>
+                    <li><a href="#plug-in">
+                        <img src="img/plug-in.jpg" alt=""/>
+                        <h6>插件管理</h6></a>
+                    </li>
+                    <li><a href="#ECMall">
+                        <img src="img/ECMall.jpg" alt=""/>
+                        <h6>商城系统</h6></a>
+                    </li>
+                    <li><a href="#elseManage">
+                        <img src="img/elseManage.jpg" alt=""/>
+                        <h6>其他管理</h6></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="navbar navbar-default" style="padding-left: 20px" >
+                <div class="row">
+                    <div class="col-md-2">
+                        <p style="margin-top: 15px"><span class="glyphicon glyphicon-user"> 欢迎您:</span><a href="" style="color:#ff8017">admin</a><img src="img/2_1.jpg" alt="" style="margin-left: 10px"/> [退出]</p>
+                    </div>
+                    <div class="col-md-10">
+                        <ul class="nav navbar-nav">
+                            <li><a href=""><img src="img/addMessage.jpg" alt=""/> 增加信息</a></li>
+                            <li><a href=""><img src="img/update.jpg" alt=""/> 数据更新</a></li>
+                            <li><a href=""><img src="img/manageMessage.jpg" alt=""/> 管理信息</a></li>
+                            <li><a href=""><img src="img/shouye.jpg" alt=""/> 网站首页</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--内容-->
+<div style="margin-top: 176px">
+    <div class="row" style="background:#F2F2F2;">
+        <div class="col-md-2" style="width:215px;height: 460px;overflow: hidden">
+           <!-- 系统设置-->
+            <div class="panel-group xitong" id="set" style="height: 490px;overflow: scroll;">
+                <div class="panel panel-heading" style="background-color: #525A65;">
+                    <h4><a href=""><span class="glyphicon glyphicon-cog" style="color: white;"> 系统设置</span></a></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#set1">系统设置+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="set1">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#xtSet">系统参数设置</a></li>
+                                <li><a href="#">仿静态参数设置</a></li>
+                                <li><a href="#">扩展变量</a></li>
+                                <li><a href="#">安全参数配置</a></li>
+                                <li><a href="#">网络防火墙</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#set2">数据更新+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="set2">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">数据更新中心</a></li>
+                                <li><a href="#">更新信息页地址</a></li>
+                                <li><a href="#">数据整理</a></li>
+                                <li><a href="#">远程发布</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#set3">数据表与系统模型</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="set3">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">新建数据表</a></li>
+                                <li><a href="#">管理数据表</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#set4">计划任务+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="set4">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理刷新任务</a></li>
+                                <li><a href="#">管理计划任务</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#set5">工作流+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="set5">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">增加工作流</a></li>
+                                <li><a href="#">管理工作流</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#set6">优化方案+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="set6">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理优化方案</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#set7">网站多访问端+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="set7">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理网站访问端</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#set8">扩展菜单+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="set8">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理菜单</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#set9">备份与恢复数据+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="set9">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">备份数据</a></li>
+                                <li><a href="#">恢复数据</a></li>
+                                <li><a href="#">管理备份目录</a></li>
+                                <li><a href="#">执行SQL语句</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 信息管理-->
+            <div class="panel-group xitong" id="message" style="height: 490px;overflow: scroll;">
+                <div class="panel panel-heading" style="background-color: #525A65;">
+                    <h4><a href=""><span class="glyphicon glyphicon-cog" style="color: white;"> 管理信息</span></a></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">管理信息</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">新增信息</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">审核信息</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">签发核信息</a>
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="panel panel-heading" style="background-color: #525A65;">
+                    <h4><a href=""><span style="color: white;">栏目信息</span></a></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">公共信息</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#message1">关于华创+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="message1">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">董事致辞</a></li>
+                                <li><a href="#">新闻</a></li>
+                                <li><a href="#">华创简介</a></li>
+                                <li><a href="#">团队建设</a></li>
+                                <li><a href="#">组织架构</a></li>
+                                <li><a href="#">发展历程</a></li>
+                                <li><a href="#">企业文化</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">集团业务</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">项目动态</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#message2">合作品牌+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="message2">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">美食</a></li>
+                                <li><a href="#">亲子</a></li>
+                                <li><a href="#">娱乐</a></li>
+                                <li><a href="#">超市</a></li>
+                                <li><a href="#">酒店</a></li>
+                                <li><a href="#">银行</a></li>
+                                <li><a href="#">其他</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">联系我们</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">友情链接</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">首页视频</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <!-- 栏目分类-->
+            <div class="panel-group xitong" id="classify" style="height: 490px;overflow: scroll;">
+                <div class="panel panel-heading" style="background-color: #525A65;">
+                    <h4><a href=""><span class="glyphicon glyphicon-cog" style="color: white;"> 栏目管理</span></a></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify1">信息相关管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify1">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理信息</a></li>
+                                <li><a href="#">审核信息</a></li>
+                                <li><a href="#">签发信息</a></li>
+                                <li><a href="#">管理评论</a></li>
+                                <li><a href="#">更新碎片</a></li>
+                                <li><a href="#">更新专题</a></li>
+                                <li><a href="#">数据统计</a></li>
+                                <li><a href="#">排行统计</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify2">栏目管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify2">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理栏目</a></li>
+                                <li><a href="#">管理栏目分页</a></li>
+                                <li><a href="#">栏目自定义字段</a></li>
+                                <li><a href="#">批量设置栏目属性</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify3">专题管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify3">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理专题分类</a></li>
+                                <li><a href="#">管理专题</a></li>
+                                <li><a href="#">专题自定义字段</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify4">标题分类管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify4">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">增加标题分类</a></li>
+                                <li><a href="#">管理标题分类</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify5">碎片管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify5">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">增加碎片分类</a></li>
+                                <li><a href="#">管理碎片</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify6">自定义页面+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify6">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理自定义页面分类</a></li>
+                                <li><a href="#">增加自定义页面</a></li>
+                                <li><a href="#">管理自定义页面</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify7">自定义列表+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify7">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理自定义列表分类</a></li>
+                                <li><a href="#">增加自定义列表</a></li>
+                                <li><a href="#">管理自定义列表</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify8">自定义JS+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify8">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理自定义JS分类</a></li>
+                                <li><a href="#">增加自定义JS</a></li>
+                                <li><a href="#">管理自定义JS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify9">TAGS管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify9">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">设置TAGS参数</a></li>
+                                <li><a href="#">管理TAGS分类</a></li>
+                                <li><a href="#">管理TAGS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify10">附件管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify10">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理附件</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify11">采集管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify11">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">增加采集节点</a></li>
+                                <li><a href="#">管理采集节点</a></li>
+                                <li><a href="#">管理采集节点分类</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify12">全站全文搜索+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify12">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">全站搜索设置</a></li>
+                                <li><a href="#">管理搜索数据源</a></li>
+                                <li><a href="#">清理搜索数据</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify13">WAP管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify13">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">WAP设置</a></li>
+                                <li><a href="#">管理WAP模板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#classify14">其他相关+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="classify14">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">统计信息数据</a></li>
+                                <li><a href="#">用户发布统计</a></li>
+                                <li><a href="#">管理搜索关键字</a></li>
+                                <li><a href="#">批量替换字段值</a></li>
+                                <li><a href="#">批量转移信息</a></li>
+                                <li><a href="#">信息批量归档</a></li>
+                                <li><a href="#">批量删除信息</a></li>
+                                <li><a href="#">管理预设投票</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 模板编辑-->
+            <div class="panel-group xitong" id="compile" style="height: 490px;overflow: scroll;">
+                <div class="panel panel-heading" style="background-color: #525A65;">
+                    <h4><a href=""><span class="glyphicon glyphicon-cog" style="color: white;"> 默认模板组</span></a></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">查看标签语法</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">自动生成标签</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">动态页面模板管理</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-heading" style="background-color: #525A65;">
+                    <h4><a href=""><span class="glyphicon glyphicon-cog" style="color: white;"> 模板管理</span></a></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile1">首页模板+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile1">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">首页模板</a></li>
+                                <li><a href="#">管理首页方案</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile2">封面模板+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile2">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理封面模板分类</a></li>
+                                <li><a href="#">管理封面模板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile3">列表模板+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile3">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理列表模板分类</a></li>
+                                <li><a href="#">管理列表模板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile4">内容模板+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile4">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理内容模板分类</a></li>
+                                <li><a href="#">增加内容模板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile5">搜索模板+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile5">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理搜索模板分类</a></li>
+                                <li><a href="#">管理搜索模板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile6">标签模板+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile6">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理标签模板分类</a></li>
+                                <li><a href="#">管理标签模板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile7">公共模板变量+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile7">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理模板变量分类</a></li>
+                                <li><a href="#">管理模板变量</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile8">公共模板+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile8">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">控制面板模板</a></li>
+                                <li><a href="#">全站搜索模板</a></li>
+                                <li><a href="#">高级搜索表单模板</a></li>
+                                <li><a href="#">横向搜索JS模板</a></li>
+                                <li><a href="#">纵向搜索JS模板</a></li>
+                                <li><a href="#">相关信息模板</a></li>
+                                <li><a href="#">留言板模板</a></li>
+                                <li><a href="#">评论JS调用模板</a></li>
+                                <li><a href="#">最终下载页模板</a></li>
+                                <li><a href="#">下载地址模板</a></li>
+                                <li><a href="#">在线播放地址模板</a></li>
+                                <li><a href="#">列表分页模板</a></li>
+                                <li><a href="#">登陆状态模板</a></li>
+                                <li><a href="#">JS调用登录模板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile9">JS模板+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile9">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理JS模板分类</a></li>
+                                <li><a href="#">管理JS模板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile10">评论列表模板+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile10">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">增加评论模板</a></li>
+                                <li><a href="#">管理评论模板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile11">打印模板+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile11">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">增加打印模板</a></li>
+                                <li><a href="#">管理打印模板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile12">自定义页面模板+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile12">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">增加自定义页面模板</a></li>
+                                <li><a href="#">管理自定义页面模板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile13">投票模板+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile13">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">增加投票模板</a></li>
+                                <li><a href="#">管理投票模板</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile14">标签+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile14">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理标签分类</a></li>
+                                <li><a href="#">管理标签</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile15">模板组管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile15">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">导入/导出模板组</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#compile16">其他相关+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="compile16">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">批量导入栏目模板</a></li>
+                                <li><a href="#">批量更换列表模板</a></li>
+                                <li><a href="#">批量替换模板字符</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 用户管理-->
+            <div class="panel-group xitong" id="usermanage" style="height: 490px;overflow: scroll;">
+                <div class="panel panel-heading" style="background-color: #525A65;">
+                    <h4><a href=""><span class="glyphicon glyphicon-cog" style="color: white;"> 用户面板</span></a></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#usermanage1">后台用户管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="usermanage1">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">修改个人资料</a></li>
+                                <li><a href="#">管理用户组</a></li>
+                                <li><a href="#">管理部门</a></li>
+                                <li><a href="#">管理用户</a></li>
+                                <li><a href="#">管理登录日志</a></li>
+                                <li><a href="#">管理操作日志</a></li>
+                                <li><a href="#">管理后台风格</a></li>
+                                <li><a href="#">管理用户组</a></li>
+                                <li><a href="#">管理用户组</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#usermanage2">前台会员管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="usermanage2">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理会员组</a></li>
+                                <li><a href="#">管理会员</a></li>
+                                <li><a href="#">管理清理会员</a></li>
+                                <li><a href="#">管理会员字段</a></li>
+                                <li><a href="#">管理会员表单</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#usermanage3">会员空间管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="usermanage3">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理空间模板</a></li>
+                                <li><a href="#">管理空间留言</a></li>
+                                <li><a href="#">管理空间反馈</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#usermanage4">外部接口+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="usermanage4">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理外部登录接口</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#usermanage5">其他功能+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="usermanage5">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理充值类型</a></li>
+                                <li><a href="#">管理点卡</a></li>
+                                <li><a href="#">批量赠送点数</a></li>
+                                <li><a href="#">批量发送邮件</a></li>
+                                <li><a href="#">批量发送短消息</a></li>
+                                <li><a href="#">批量删除短消息</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- 插件管理-->
+            <div class="panel-group xitong" id="plug-in" style="height: 490px;overflow: scroll;">
+                <div class="panel panel-heading" style="background-color: #525A65;">
+                    <h4><a href=""><span class="glyphicon glyphicon-cog" style="color: white;"> 插件管理</span></a></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#plug-in1">后台用户管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="plug-in1">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">修改个人资料</a></li>
+                                <li><a href="#">管理用户组</a></li>
+                                <li><a href="#">管理部门</a></li>
+                                <li><a href="#">管理用户</a></li>
+                                <li><a href="#">管理登录日志</a></li>
+                                <li><a href="#">管理操作日志</a></li>
+                                <li><a href="#">管理后台风格</a></li>
+                                <li><a href="#">管理用户组</a></li>
+                                <li><a href="#">管理用户组</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#plug-in2">广告系统+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="plug-in2">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理广告分类</a></li>
+                                <li><a href="#">管理广告</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#plug-in3">投票系统+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="plug-in3">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">增加投票</a></li>
+                                <li><a href="#">管理投票</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#plug-in4">友情链接管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="plug-in4">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理友情链接分类</a></li>
+                                <li><a href="#">管理友情链接</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#plug-in5">留言板管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="plug-in5">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理留言分类</a></li>
+                                <li><a href="#">管理留言</a></li>
+                                <li><a href="#">批量删除留言</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#plug-in6">信息反馈管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="plug-in6">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理反馈分类</a></li>
+                                <li><a href="#">管理反馈字段</a></li>
+                                <li><a href="#">管理信息反馈</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#plug-in7">防采集插件+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="plug-in7">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理防采集随机字符</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- 商城系统-->
+            <div class="panel-group xitong" id="ECMall" style="height: 490px;overflow: scroll;">
+                <div class="panel panel-heading" style="background-color: #525A65;">
+                    <h4><a href=""><span class="glyphicon glyphicon-cog" style="color: white;"> 管理订单</span></a></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">所有订单</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">未发货订单</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">备货中订单</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">已发货订单</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">退货的订单</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-heading" style="background-color: #525A65;">
+                    <h4><a href=""><span class="glyphicon glyphicon-cog" style="color: white;"> 支付与配送</span></a></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">管理支付方式</a>
+                            <a href="#" data-toggle="collapse">管理配送方式</a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="panel panel-heading" style="background-color: #525A65;">
+                    <h4><a href=""><span class="glyphicon glyphicon-cog" style="color: white;"> 商城参数设置</span></a></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse">商城参数设置</a>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <!-- 其他管理-->
+            <div class="panel-group xitong" id="elseManage" style="height: 490px;overflow: scroll;">
+                <div class="panel panel-heading" style="background-color: #525A65;">
+                    <h4><a href=""><span class="glyphicon glyphicon-cog" style="color: white;"> 其他管理</span></a></h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#else1">新闻模型相关+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="else1">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理信息来源</a></li>
+                                <li><a href="#">管理作者</a></li>
+                                <li><a href="#">管理内容关键字</a></li>
+                                <li><a href="#">管理过滤字符</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#else2">下载模型相关+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="else2">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理地址前缀</a></li>
+                                <li><a href="#">删除下载记录</a></li>
+                                <li><a href="#">管理错误报告</a></li>
+                                <li><a href="#">批量替换地址权限</a></li>
+                                <li><a href="#">播放器管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#else3">在线支付+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="else3">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">支付参数配置</a></li>
+                                <li><a href="#">管理支付接口</a></li>
+                                <li><a href="#">管理支付记录</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#" data-toggle="collapse" data-target="#else4">图片信息管理+</a>
+                        </h4>
+                    </div>
+                    <div class="collapse panel-collapse" id="else4">
+                        <div class="panel-body">
+                            <ul>
+                                <li><a href="#">管理图片信息分类</a></li>
+                                <li><a href="#">管理图片信息</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10" style="height: 1000px">
+            <div class="col-md-12 active" id="welcome" style="background-color: #F2F2F2">
+                <h2>欢迎使用网站管理系统</h2>
+                <div class="col-md-12">
+                    <div class="alert alert-info">
+                        <p>欢迎您admin (超级管理员) 这是您第 47 次登录 修改密码<span class="pull-right">上次登录时间 : 2018-03-19 08:54</span></p>
+                    </div>
+                    <div class="col-md-12 taglist" style="background-color: white">
+                        <h4>快捷菜单操作功能</h4>
+                        <div class="alert pull-left navbar-default content_right">
+                            <img src="img/c1.jpg" alt=""/>
+                            <h6>个人资料</h6>
+                        </div>
+                        <div class="alert pull-left navbar-default content_right" >
+                            <img src="img/c2.jpg" alt=""/>
+                            <h6>增加信息</h6>
+                        </div>
+                        <div class="alert pull-left navbar-default content_right" >
+                            <img src="img/c3.jpg" alt=""/>
+                            <h6>管理栏目</h6>
+                        </div>
+                        <div class="alert pull-left navbar-default content_right" >
+                            <img src="img/c4.jpg" alt=""/>
+                            <h6>专题管理</h6>
+                        </div>
+                        <div class="alert pull-left navbar-default content_right" >
+                            <img src="img/c5.jpg" alt=""/>
+                            <h6>参数设置</h6>
+                        </div>
+                        <div class="alert pull-left navbar-default content_right" >
+                            <img src="img/c6.jpg" alt=""/>
+                            <h6>数据更新</h6>
+                        </div>
+                        <div class="alert pull-left navbar-default content_right" >
+                            <img src="img/c7.jpg" alt=""/>
+                            <h6>登录日志</h6>
+                        </div>
+                        <div class="alert pull-left navbar-default content_right" >
+                            <img src="img/c8.jpg" alt=""/>
+                            <h6>留言管理</h6>
+                        </div>
+                        <div class="alert pull-left navbar-default content_right" >
+                            <img src="img/c9.jpg" alt=""/>
+                            <h6>反馈管理</h6>
+                        </div>
+                        <div class="alert pull-left navbar-default content_right" >
+                            <img src="img/c10.jpg" alt=""/>
+                            <h6>友链管理</h6>
+                        </div>
+                    </div>
+                    <div class="col-md-12 taglist" style="background-color: white">
+                    <h4>今日信息数据统计</h4>
+                    <div class="row">
+                        <div class="panel pull-left" style="width: 160px;height: 210px;margin-left: 20px">
+                            <div class="panel-body  panel-default" style="background-color: #F5F5F7">
+                                <img src="img/c11.jpg" alt=""/>
+                            </div>
+                            <div class="panel-heading " style="background-color: #E1E1E1">未审核评论</div>
+                        </div>
+                        <div class="panel pull-left" style="width: 160px;height: 210px;margin-left: 20px">
+                            <div class="panel-body  panel-default" style="background-color: #F5F5F7">
+                                <img src="img/c12.jpg" alt=""/>
+                            </div>
+                            <div class="panel-heading " style="background-color: #E1E1E1">未审核会员</div>
+                        </div>
+                        <div class="panel pull-left" style="width: 160px;height: 210px;margin-left: 20px">
+                            <div class="panel-body  panel-default" style="background-color: #F5F5F7">
+                                <img src="img/c13.jpg" alt=""/>
+                            </div>
+                            <div class="panel-heading " style="background-color: #E1E1E1">过期广告</div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-12 " style="margin-top: 20px">
+                    <div class="panel">
+                        <div class="panel panel-heading">
+                            <h5 class="panel-title col-md-offset-5"><a href="">网站信息</a></h5>
+                        </div>
+                        <div class="panel panel-body">
+                            <p>会员注册：开启</p>
+                            <p>会员投稿：开启</p>
+                            <p>当前版本：Free7.2 (201502071030) UTF-8</p>
+                            <p>上传文件：可以(最大文件：30M，表单：25M)</p>
+                            <p>环境配置：全局变量：关闭(建议关闭) 、魔术引用：关闭(建议开启)</p>
+                            <p>服务器信息：PHP5.2.17/MYSQL 5.1.65-community/服务器 Microsoft-IIS/7.5</p>
+                            <h4 style="margin-top:50px">您的网站还有以下时间可用(到期时间2017年01月01日 0点)</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
